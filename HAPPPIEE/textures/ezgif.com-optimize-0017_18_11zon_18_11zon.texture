@@ -1,0 +1,36 @@
+{
+  "modelName": "texture",
+  "name": "ezgif.com-optimize-0017_18_11zon_18_11zon",
+  "identifier": "texture:106183-b5598a6e-937d-4b9b-8f40-207ee21f63c2",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "288b83b64e5b8d9cbbb05413bbc5c0dc",
+  "assetLocator": "textures/ezgif.com-optimize-0017_18_11zon_18_11zon.jpg",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 512,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 288,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "288b83b64e5b8d9cbbb05413bbc5c0dc",
+      "colorCount": 20969,
+      "detectedAlphaChannel": "no_alpha",
+      "detectedOriginalFormat": "jpeg",
+      "entropyOfDistribution": 10.83668940160367,
+      "pixelsHigh": 512,
+      "pixelsWide": 288
+    }
+  ]
+}

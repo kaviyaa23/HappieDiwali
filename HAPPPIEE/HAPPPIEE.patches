@@ -1,0 +1,117 @@
+{
+  "id": "105798b5598a6e937d4b9b8f40207ee21f63c2",
+  "revision": "107327d44a9be00f574abea6eefcb18836720c",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 173
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "windows",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 173
+  },
+  "visual_programming": {
+    "connections": [
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:95593-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "fromPatch": "template_patch_model:95589-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:95591-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:95595-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "fromPatch": "template_patch_model:95591-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "fromPort": "100",
+        "toPatch": "producer_patch_model:95587-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "toPort": "100"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:95941-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "fromPatch": "producer_patch_model:95587-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "fromPort": "1001",
+        "toPatch": "consumer_patch_model:95939-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "toPort": "101"
+      }
+    ],
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:105890-b5598a6e-937d-4b9b-8f40-207ee21f63c2",
+        "subpatches": [
+          "consumer_patch_model:95939-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+          "producer_patch_model:95587-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+          "template_patch_model:95589-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+          "template_patch_model:95591-d44a9be0-0f57-4abe-a6ee-fcb18836720c"
+        ]
+      }
+    ],
+    "patches": [
+      {
+        "modelName": "consumer_patch_model",
+        "name": "Star",
+        "identifier": "consumer_patch_model:95939-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "object": "master3_d_object_model:95410-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "objectProperty": "visible",
+        "position": [
+          604.3249999999999,
+          171.39999999999998
+        ],
+        "values": [
+          {
+            "port": "101",
+            "value": {
+              "t": "bool",
+              "v": false
+            }
+          }
+        ]
+      },
+      {
+        "modelName": "producer_patch_model",
+        "name": "targetTracker0",
+        "identifier": "producer_patch_model:95587-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "object": "moving_target_tracker_model:94507-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "position": [
+          370.075,
+          95.14999999999998
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Target Finder",
+        "identifier": "template_patch_model:95589-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "position": [
+          -121.92500000000001,
+          95.14999999999998
+        ],
+        "templateId": "builtin.unifiedTargetFinder"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Target Select",
+        "identifier": "template_patch_model:95591-d44a9be0-0f57-4abe-a6ee-fcb18836720c",
+        "position": [
+          79.07499999999999,
+          95.14999999999998
+        ],
+        "templateId": "builtin.unifiedTargetPicker",
+        "values": [
+          {
+            "port": "2",
+            "value": {
+              "t": "string",
+              "v": "texture:94727-d44a9be0-0f57-4abe-a6ee-fcb18836720c"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
